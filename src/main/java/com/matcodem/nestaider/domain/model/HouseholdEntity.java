@@ -2,8 +2,6 @@ package com.matcodem.nestaider.domain.model;
 
 import java.util.Set;
 
-import com.matcodem.nestaider.user.model.UserEntity;
-
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

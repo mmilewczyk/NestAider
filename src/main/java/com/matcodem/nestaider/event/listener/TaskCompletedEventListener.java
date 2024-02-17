@@ -14,8 +14,8 @@ import com.matcodem.nestaider.domain.service.TaskExecutionHistoryService;
 import com.matcodem.nestaider.domain.strategy.NextDueDateCalculator;
 import com.matcodem.nestaider.event.event.TaskCompletedEvent;
 import com.matcodem.nestaider.infrastructure.repository.TaskRepository;
-import com.matcodem.nestaider.user.model.UserEntity;
-import com.matcodem.nestaider.user.repository.UserRepository;
+import com.matcodem.nestaider.domain.model.UserEntity;
+import com.matcodem.nestaider.infrastructure.repository.UserRepository;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

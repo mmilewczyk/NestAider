@@ -3,7 +3,7 @@ package com.matcodem.nestaider.event.event;
 import org.springframework.context.ApplicationEvent;
 
 import com.matcodem.nestaider.domain.model.HouseholdEntity;
-import com.matcodem.nestaider.user.model.UserEntity;
+import com.matcodem.nestaider.domain.model.UserEntity;
 
 import lombok.Getter;
 

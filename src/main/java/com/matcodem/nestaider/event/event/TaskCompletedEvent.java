@@ -4,7 +4,7 @@ import org.springframework.context.ApplicationEvent;
 
 import com.matcodem.nestaider.event.listener.TaskCompletedEventListener;
 import com.matcodem.nestaider.domain.model.dto.HouseholdTask;
-import com.matcodem.nestaider.user.model.UserEntity;
+import com.matcodem.nestaider.domain.model.UserEntity;
 
 import lombok.Getter;
 

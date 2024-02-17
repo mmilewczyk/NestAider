@@ -2,8 +2,6 @@ package com.matcodem.nestaider.domain.model;
 
 import java.time.LocalDateTime;
 
-import com.matcodem.nestaider.user.model.UserEntity;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

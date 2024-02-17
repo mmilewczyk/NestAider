@@ -13,7 +13,7 @@ import com.matcodem.nestaider.domain.model.dto.HouseholdTask;
 import com.matcodem.nestaider.exception.TaskNotFoundException;
 import com.matcodem.nestaider.infrastructure.repository.TaskExecutionHistoryRepository;
 import com.matcodem.nestaider.infrastructure.repository.TaskRepository;
-import com.matcodem.nestaider.user.model.UserEntity;
+import com.matcodem.nestaider.domain.model.UserEntity;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

@@ -3,8 +3,6 @@ package com.matcodem.nestaider.domain.model;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-import com.matcodem.nestaider.user.model.UserEntity;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;

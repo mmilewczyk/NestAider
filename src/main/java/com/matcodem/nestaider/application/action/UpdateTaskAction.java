@@ -3,7 +3,7 @@ package com.matcodem.nestaider.application.action;
 import java.time.LocalDateTime;
 
 import com.matcodem.nestaider.domain.model.FrequencyType;
-import com.matcodem.nestaider.user.model.UserEntity;
+import com.matcodem.nestaider.domain.model.UserEntity;
 
 public record UpdateTaskAction(
 		Long taskId,

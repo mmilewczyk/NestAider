@@ -18,8 +18,8 @@ import com.matcodem.nestaider.exception.TaskAlreadyCompletedException;
 import com.matcodem.nestaider.exception.TaskNotFoundException;
 import com.matcodem.nestaider.infrastructure.mapper.HouseholdTaskMapper;
 import com.matcodem.nestaider.infrastructure.repository.TaskRepository;
-import com.matcodem.nestaider.user.model.UserEntity;
-import com.matcodem.nestaider.user.service.AuthenticationService;
+import com.matcodem.nestaider.domain.model.UserEntity;
+import com.matcodem.nestaider.domain.service.AuthenticationService;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

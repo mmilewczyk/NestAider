@@ -1,4 +1,4 @@
-package com.matcodem.nestaider.user.model;
+package com.matcodem.nestaider.domain.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

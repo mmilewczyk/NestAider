@@ -1,12 +1,12 @@
-package com.matcodem.nestaider.user.service;
+package com.matcodem.nestaider.domain.service;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
-import com.matcodem.nestaider.user.model.UserEntity;
-import com.matcodem.nestaider.user.repository.UserRepository;
+import com.matcodem.nestaider.domain.model.UserEntity;
+import com.matcodem.nestaider.infrastructure.repository.UserRepository;
 
 import lombok.RequiredArgsConstructor;
 
