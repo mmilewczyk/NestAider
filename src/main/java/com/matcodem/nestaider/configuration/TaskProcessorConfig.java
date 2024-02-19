@@ -6,30 +6,30 @@ import java.util.Map;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.matcodem.nestaider.application.action.AddHouseholdTaskAction;
-import com.matcodem.nestaider.application.action.CompleteTaskAction;
-import com.matcodem.nestaider.application.action.DeleteTaskByIdAction;
-import com.matcodem.nestaider.application.action.GetTaskByIdAction;
-import com.matcodem.nestaider.application.action.UpdateTaskAction;
-import com.matcodem.nestaider.infrastructure.processor.AddHouseholdTaskProcessor;
-import com.matcodem.nestaider.infrastructure.processor.CompleteTaskProcessor;
-import com.matcodem.nestaider.infrastructure.processor.DeleteTaskByIdProcessor;
-import com.matcodem.nestaider.application.action.GetAllTasksAction;
-import com.matcodem.nestaider.infrastructure.processor.GetAllTasksProcessor;
-import com.matcodem.nestaider.infrastructure.processor.GetTaskByIdProcessor;
-import com.matcodem.nestaider.infrastructure.processor.TaskProcessor;
-import com.matcodem.nestaider.infrastructure.processor.UpdateTaskProcessor;
+import com.matcodem.nestaider.application.action.task.AddHouseholdTaskAction;
+import com.matcodem.nestaider.application.action.task.CompleteTaskAction;
+import com.matcodem.nestaider.application.action.task.DeleteTaskByIdAction;
+import com.matcodem.nestaider.application.action.task.GetTaskByIdAction;
+import com.matcodem.nestaider.application.action.task.UpdateTaskAction;
+import com.matcodem.nestaider.infrastructure.processor.task.AddHouseholdTaskProcessor;
+import com.matcodem.nestaider.infrastructure.processor.task.CompleteTaskProcessor;
+import com.matcodem.nestaider.infrastructure.processor.task.DeleteTaskByIdProcessor;
+import com.matcodem.nestaider.application.action.task.GetAllTasksAction;
+import com.matcodem.nestaider.infrastructure.processor.task.GetAllTasksProcessor;
+import com.matcodem.nestaider.infrastructure.processor.task.GetTaskByIdProcessor;
+import com.matcodem.nestaider.infrastructure.processor.task.TaskProcessor;
+import com.matcodem.nestaider.infrastructure.processor.task.UpdateTaskProcessor;
 
 @Configuration
 public class TaskProcessorConfig {
 
 	@Bean
-	public Map<Class<?>, TaskProcessor<?, ?>> processorMap(AddHouseholdTaskProcessor addHouseholdTaskProcessor,
-	                                                       CompleteTaskProcessor completeTaskProcessor,
-	                                                       DeleteTaskByIdProcessor deleteTaskByIdProcessor,
-	                                                       GetAllTasksProcessor getAllTasksProcessor,
-	                                                       GetTaskByIdProcessor getTaskByIdProcessor,
-	                                                       UpdateTaskProcessor updateTaskProcessor) {
+	public Map<Class<?>, TaskProcessor<?, ?>> taskProcessorMap(AddHouseholdTaskProcessor addHouseholdTaskProcessor,
+	                                                           CompleteTaskProcessor completeTaskProcessor,
+	                                                           DeleteTaskByIdProcessor deleteTaskByIdProcessor,
+	                                                           GetAllTasksProcessor getAllTasksProcessor,
+	                                                           GetTaskByIdProcessor getTaskByIdProcessor,
+	                                                           UpdateTaskProcessor updateTaskProcessor) {
 		Map<Class<?>, TaskProcessor<?, ?>> processorMap = new HashMap<>();
 		processorMap.put(AddHouseholdTaskAction.class, addHouseholdTaskProcessor);
 		processorMap.put(CompleteTaskAction.class, completeTaskProcessor);

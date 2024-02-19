@@ -1,17 +1,14 @@
 package com.matcodem.nestaider.domain.model;
 
-import java.util.Set;
-
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.Set;
 
 @Entity
 @Getter
@@ -19,10 +16,12 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class HouseholdEntity {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
+	@NotBlank(message = "Name is required")
 	private String name;
 
 	@OneToMany(mappedBy = "household", cascade = CascadeType.ALL)
@@ -31,7 +30,11 @@ public class HouseholdEntity {
 	@OneToMany(mappedBy = "household", cascade = CascadeType.ALL)
 	private Set<UserEntity> members;
 
-	public HouseholdEntity(String name) {
-		this.name = name;
-	}
+	@Column(name = "avatar_path")
+	@NotBlank(message = "Avatar is required")
+	private String avatarPath;
+
+	@Embedded
+	@NotNull
+	private Address address;
 }
